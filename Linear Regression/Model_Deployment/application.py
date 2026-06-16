@@ -10,8 +10,8 @@ application = Flask(__name__)
 app = application
 
 ## Import ridge regression and standard scaler pickle
-ridge_model = pickle.load(open('ridge.pkl','rb'))
-standard_scaler = pickle.load(open('scaler.pkl','rb'))
+ridge_model = pickle.load(open(r'E:\udemy\Machine_Learning\Linear Regression\Model_Building\ridge.pkl','rb'))
+standard_scaler = pickle.load(open(r'E:\udemy\Machine_Learning\Linear Regression\Model_Building\scaler.pkl','rb'))
 
 ## Creating routes - welcome page
 @app.route("/")
